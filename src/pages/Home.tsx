@@ -63,7 +63,7 @@ export const Home: React.FC = () => {
   return (
     <div className="min-h-screen px-4 pt-8 pb-16 bg-gray-100 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
             <CloudSun className="w-8 h-8 text-blue-500" />
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
@@ -82,6 +82,10 @@ export const Home: React.FC = () => {
             )}
           </button>
         </div>
+
+        <p className="mb-6 text-sm text-gray-600 dark:text-gray-400">
+          If your city is not displayed, enter it into the search bar and hit enter, or click the magnifying glass icon to add it to the stack below.
+        </p>
 
         <div className="mb-8">
           <SearchBar onSearch={handleSearch} />
